@@ -1,0 +1,23 @@
+.questions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding-left: 20px;
+
+    p{
+        text-align: center;
+    }
+}
+
+.result{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
