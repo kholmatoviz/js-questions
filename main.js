@@ -143,13 +143,13 @@ let resultTwelwe = document.getElementById("result_twelwe");
 formFive.addEventListener("submit", (e) => {
     e.preventDefault();
     resultTwelwe.innerHTML = "";
+    let countFour = 0;
 
     for (let i = 0; i < inputFive.value.length; i++) {
         if (inputFive.value[i] == "a" || inputFive.value[i] == "e" || inputFive.value[i] == "i" || inputFive.value[i] == "o" || inputFive.value[i] == "u") {
-            resultTwelwe.innerHTML += `<p>${inputFive.value[i]}</p>`
-            
-        }else {
-            resultTwelwe.innerHTML = `<p>Bu so'zda unli harflar yo'q boshqa so'z kiriting!</p>`
+            countFour++
         }
     }
+    resultTwelwe.innerHTML += `<p>${countFour}ta unli harf bor</p>` 
+    inputFive.value = "";  
 })
